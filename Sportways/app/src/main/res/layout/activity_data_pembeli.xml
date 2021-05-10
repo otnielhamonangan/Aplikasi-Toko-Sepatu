@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data_pembeli"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/trxproductnametxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Product Name" />
+        <TextView
+            android:id="@+id/trxpricetxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trxproductnametxt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="PRICE" />
+        <TextView
+            android:id="@+id/trxqtytxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trxpricetxt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="QTY" />
+        <TextView
+            android:id="@+id/trxtottxt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trxqtytxt"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="TOTAL HARGA" />
+
+
+        <TextView
+            android:id="@+id/trxproductname"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/trxproductnametxt"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Product Name" />
+        <TextView
+            android:id="@+id/trxprice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/trxproductname"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/trxpricetxt"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:hint="PRICE" />
+        <TextView
+            android:id="@+id/trxqty"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trxprice"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/trxqtytxt"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:hint="QTY" />
+        <TextView
+            android:id="@+id/trxtot"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/trxqty"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/trxtottxt"
+            android:hint="TOTAL HARGA" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/datapembeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="120dp"
+            android:text="Data Pembeli" />
+
+        <EditText
+            android:id="@+id/nmpembeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Masukan Nama" />
+
+        <EditText
+            android:id="@+id/nopembeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="Masukan NO HP" />
+
+        <EditText
+            android:id="@+id/alamatpembeli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Alamat" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/totalbyr"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:hint="Total Bayar" />-->
+
+
+        <TextView
+            android:id="@+id/metodepem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productname6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Metode Pembayaran" />
+        <ImageView
+            android:id="@+id/bca"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/metodepem"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/bca" />
+        <TextView
+            android:id="@+id/norek1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bca"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:text="Bank BCA" />
+        <TextView
+            android:id="@+id/norek35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bca"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="5412394923" />
+        <TextView
+            android:id="@+id/norek40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bca"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="Otniel Hamonangan" />
+
+        <Button
+            android:id="@+id/btnproses"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="B A Y A R" />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
